@@ -1,0 +1,20 @@
+const CAR_DATA = {
+  updated: "August 31, 2026",
+  summary: [
+    "Best current hybrid value: the 2013 Toyota Prius Three is inexpensive and efficient, but its age and 109k+ miles keep it below several newer gas vehicles.",
+    "Best low-mileage sedan value: the 2017 Toyota Camry LE at roughly 37k miles is expensive for its age, but it is the strongest reliability-focused option currently surfaced near the top of the budget.",
+    "Best AWD value: the 2018 Ford Escape SEL 4WD offers AWD and a much lower asking price than most comparable crossovers.",
+    "Hybrid + AWD inventory under $20,000 remains thin around 42301. The daily search should aggressively watch for Ford Escape Hybrid, Kia Niro, Toyota Camry Hybrid, Honda Accord Hybrid, Toyota RAV4 Hybrid, and Honda CR-V Hybrid listings."
+  ],
+  cars: [
+    {rank:1,year:2018,vehicle:"Ford Escape SEL",price:12930,miles:72070,type:"Small crossover",fuel:"Gas",drive:"4WD",dealer:"D-Patrick Honda",area:"Evansville, IN",assessment:"Best AWD value currently surfaced. Strong price with reasonable mileage for the age.",url:"https://www.cars.com/shopping/ford-escape/boonville-in/price-under-25000/"},
+    {rank:2,year:2017,vehicle:"Toyota Camry LE",price:19951,miles:37205,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"D-Patrick Motoplex",area:"Evansville, IN",assessment:"Excellent low-mileage reliability play. Price is high for the age, but 37k miles matters.",url:"https://www.capitalone.com/cars/vehicle-details/2017/Toyota/Camry/LE/4T1BF1FK7HU755071"},
+    {rank:3,year:2024,vehicle:"Nissan Altima 2.5 SR",price:18999,miles:46161,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Vantacar",area:"Owensboro, KY",assessment:"Newest option near budget. Good mileage and price; CVT history keeps it below the Camry.",url:"https://www.autostoday.com/cars-for-sale/used-cars/listing/1N4BL4CVXRN431644-998b63e9-053f/2024-nissan-altima-2-5-sr-owensboro-ky"},
+    {rank:4,year:2020,vehicle:"Chevrolet Malibu LT",price:19712,miles:29176,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"D-Patrick Motoplex",area:"Evansville, IN",assessment:"Very low mileage. Strong value if title history and inspection check out.",url:"https://www.capitalone.com/cars/vehicle-details/2020/Chevrolet/Malibu/LT/1G1ZD5ST4LF001629"},
+    {rank:5,year:2020,vehicle:"Chevrolet Blazer 2LT",price:18941,miles:59559,type:"Crossover",fuel:"Gas",drive:"FWD",dealer:"Kenny Kent Chevrolet",area:"Evansville, IN",assessment:"Good price/mileage balance and practical size, but weaker fuel economy than preferred.",url:"https://www.capitalone.com/cars/vehicle-details/2020/Chevrolet/Blazer/LT/3GNKBCRS1LS588701"},
+    {rank:6,year:2020,vehicle:"Nissan Kicks SR",price:17446,miles:53000,type:"Small crossover",fuel:"Gas",drive:"FWD",dealer:"D-Patrick Nissan",area:"Evansville, IN",assessment:"Efficient crossover alternative with decent mileage. No AWD; CVT deserves inspection.",url:"https://www.cars.com/shopping/nissan-kicks-2020-sr/"},
+    {rank:7,year:2019,vehicle:"Mazda CX-5 Touring",price:18952,miles:94087,type:"Small crossover",fuel:"Gas",drive:"AWD",dealer:"D-Patrick Honda",area:"Evansville, IN",assessment:"Strong AWD model, but 94k miles is higher than ideal at nearly $19k.",url:"https://www.dpathonda.com/used/Mazda/2019-Mazda-CX-5-d9b1960cac18101fae2fc558af04b3ac.htm"},
+    {rank:8,year:2018,vehicle:"Toyota Camry XSE V6",price:18999,miles:98471,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Vantacar",area:"Owensboro, KY",assessment:"Reliable platform, but nearly 100k miles and V6 economy reduce its ranking.",url:"https://www.capitalone.com/cars/vehicle-details/2018/Toyota/Camry/XSE%2BV6/4T1BZ1HK0JU004078"},
+    {rank:9,year:2013,vehicle:"Toyota Prius Three",price:10999,miles:109937,type:"Hatchback",fuel:"Hybrid",drive:"FWD",dealer:"Vantacar",area:"Owensboro, KY",assessment:"Best local hybrid bargain, but age and mileage are significant. Battery health should be checked.",url:"https://www.cars.com/shopping/toyota/owensboro-ky/price-under-20000/"}
+  ]
+};
