@@ -16,8 +16,6 @@ h1{font-size:26px;line-height:1.05;letter-spacing:-.025em;margin:0}
 .updated{font-size:12px;color:#475467;margin-bottom:16px}
 .grid{display:grid;gap:14px}
 .car{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(16,24,40,.04)}
-.thumb{width:100%;aspect-ratio:16/9;background:#eaecf0;display:flex;align-items:center;justify-content:center;color:#98a2b3;font-size:13px;overflow:hidden}
-.thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .body{padding:15px}
 .head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
 .rank{min-width:34px;height:34px;border-radius:999px;background:#f2f4f7;display:flex;align-items:center;justify-content:center;font-weight:800}
@@ -60,12 +58,9 @@ const fmt=n=>new Intl.NumberFormat('en-US').format(n);
 document.getElementById('updated').textContent='Last updated: '+CAR_DATA.updated;
 document.getElementById('summary').innerHTML=CAR_DATA.summary.map(x=>'<p>'+x+'</p>').join('');
 document.getElementById('cards').innerHTML=CAR_DATA.cars.map(c=>{
-  const thumb=c.image
-    ? '<div class="thumb"><img src="'+c.image+'" alt="'+c.year+' '+c.vehicle+'" loading="lazy" onerror="this.parentElement.innerHTML=\'Photo unavailable\'"></div>'
-    : '<div class="thumb">Photo unavailable</div>';
   const badges=(c.fuel==='Hybrid'?'<span class="badge hybrid">Hybrid</span>':'<span class="badge">'+c.fuel+'</span>')+
     (c.drive && c.drive.includes('WD')?'<span class="badge awd">'+c.drive+'</span>':'<span class="badge">'+c.drive+'</span>');
-  return '<article class="car">'+thumb+
+  return '<article class="car">'+
     '<div class="body"><div class="head"><div class="rank">'+c.rank+'</div><div class="title">'+c.year+' '+c.vehicle+'</div></div>'+
     '<div class="price">$'+fmt(c.price)+'</div>'+
     '<div class="badges">'+badges+'</div>'+
