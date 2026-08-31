@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Owensboro Used Car Search — Mobile</title>
 <style>
 :root{--bg:#f5f7fa;--card:#fff;--ink:#101828;--muted:#667085;--line:#e4e7ec;--blue:#175cd3;--green:#067647}
@@ -52,7 +55,7 @@ h1{font-size:26px;line-height:1.05;letter-spacing:-.025em;margin:0}
     <div class="note">Prices and availability can change quickly. Verify the listing, title history, accident history and total dealer fees before traveling.</div>
   </section>
 </div>
-<script src="../data.js"></script>
+<script src="../data.js?v=2"></script>
 <script>
 const fmt=n=>new Intl.NumberFormat('en-US').format(n);
 document.getElementById('updated').textContent='Last updated: '+CAR_DATA.updated;
@@ -72,5 +75,6 @@ document.getElementById('cards').innerHTML=CAR_DATA.cars.map(c=>{
     '<a class="button" href="'+c.url+'" target="_blank" rel="noopener">View vehicle listing ↗</a></div></article>';
 }).join('');
 </script>
+<!-- mobile-cards-no-photos-v2 -->
 </body>
 </html>
