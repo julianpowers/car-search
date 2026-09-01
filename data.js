@@ -1,72 +1,19 @@
 const CAR_DATA = {
-  updated: "August 31, 2026 · dealer-first verified refresh",
+  updated: "August 31, 2026 · 8:06 PM ET · expanded inventory-endpoint refresh",
   summary: [
-    "This refresh applies the expanded dealer-first methodology and a stricter live-link standard. Only vehicles with a currently verifiable individual selling-dealer page are included; Capital One and generic inventory/search links are excluded.",
-    "The 2018 Ford Fusion Hybrid S remains the best match to the original priorities: $14,498, 44,463 miles, hybrid, and local in Owensboro. It combines reasonable mileage with excellent fuel economy and leaves substantial room below the $20,000 ceiling.",
-    "The strongest pure low-mileage value is the 2018 Hyundai Elantra SE at Uebelhor & Sons in Jasper: $14,750 with only 20,693 miles. It is not hybrid or AWD, but the exceptionally low mileage and dealer's no-doc-fee policy make it a serious alternative.",
-    "For AWD/crossover needs, the 2018 Honda CR-V EX is the best verified fit at $19,586 with 97,903 miles. The CR-V EX-L is slightly cheaper at $18,384 but has 123,655 miles, so it ranks lower despite its additional equipment.",
-    "The verified board is intentionally short. The expanded crawl surfaced other candidates, including hybrids and newer Toyotas, but cars above $20,000 or listings without a live exact dealer-detail page were excluded rather than padding the leaderboard with stale or indirect links."
+    "This refresh expands discovery beyond dealer pages that happen to index well. It uses dealer inventory endpoints plus marketplace inventory feeds to enumerate candidates first, then preserves exact vehicle-detail links. That surfaced several strong Corolla options that the earlier four-car board missed.",
+    "The best low-mileage conventional choices are now the 2025 Toyota Corolla LE at $19,387 with 20,712 miles, the 2018 Hyundai Elantra SE at $14,750 with 20,693 miles, and the 2024 Toyota Corolla LE at $18,437 with 31,977 miles.",
+    "The 2018 Ford Fusion Hybrid remains the best efficiency-focused value: 44,463 miles, 42 MPG combined and a dealer-direct listing. Its current Don Moore page shows a Moore Value Price of $18,286 including the listed processing fee.",
+    "For AWD/crossover shoppers, the 2020 Honda CR-V LX at Lou Fusz Kia is a more modern option at $18,257 with 100,967 miles. It carries more mileage than the sedans, so AWD should be important enough to justify that tradeoff.",
+    "The board now deliberately favors complete discovery over relying on search-engine indexing. The scheduled 5 AM job has been updated to crawl filtered dealer inventory endpoints first and then validate individual VDPs."
   ],
   cars: [
-    {
-      rank:1,
-      year:2018,
-      vehicle:"Ford Fusion Hybrid S",
-      price:14498,
-      miles:44463,
-      type:"Sedan",
-      fuel:"Hybrid",
-      drive:"FWD",
-      dealer:"Don Moore on Frederica",
-      area:"Owensboro, KY",
-      vin:"3FA6P0UUXJR282061",
-      assessment:"Best overall match. Hybrid, about 42 MPG combined, relatively low mileage, local, and well below budget. Dealer-direct listing verified.",
-      url:"https://www.donmoorehonda.com/used-Owensboro-2018-Ford-Fusion%2BHybrid-S-3FA6P0UUXJR282061"
-    },
-    {
-      rank:2,
-      year:2018,
-      vehicle:"Hyundai Elantra SE",
-      price:14750,
-      miles:20693,
-      type:"Sedan",
-      fuel:"Gas",
-      drive:"FWD",
-      dealer:"Uebelhor & Sons Chevrolet Jasper",
-      area:"Jasper, IN",
-      vin:"KMHD74LF3JU453541",
-      assessment:"Outstanding low-mileage value at only 20,693 miles. Not hybrid or AWD, but the mileage, price and no-doc-fee dealer policy make it a strong longevity-per-dollar choice.",
-      url:"https://www.uebelhortoyota.com/used/Hyundai/2018-Hyundai-Elantra--For-Sale-Jasper-Indiana-998e45cfac1851c1f80656ffb5ba4663.htm"
-    },
-    {
-      rank:3,
-      year:2018,
-      vehicle:"Honda CR-V EX",
-      price:19586,
-      miles:97903,
-      type:"Small crossover",
-      fuel:"Gas",
-      drive:"AWD",
-      dealer:"Don Moore on Frederica",
-      area:"Owensboro, KY",
-      vin:"7FARW2H59JE022118",
-      assessment:"Best verified AWD crossover within budget. Strong practicality and Honda platform, but nearly 98k miles and a near-$20k price are meaningful tradeoffs.",
-      url:"https://www.donmoorehonda.com/used-Owensboro-2018-Honda-CR%2BV-EX-7FARW2H59JE022118"
-    },
-    {
-      rank:4,
-      year:2018,
-      vehicle:"Honda CR-V EX-L",
-      price:18384,
-      miles:123655,
-      type:"Small crossover",
-      fuel:"Gas",
-      drive:"AWD",
-      dealer:"Don Moore on Frederica",
-      area:"Owensboro, KY",
-      vin:"2HKRW2H86JH658521",
-      assessment:"AWD, leather and additional EX-L equipment for less than the EX, but 123,655 miles is substantially above the preferred range. Consider only with excellent service history and inspection.",
-      url:"https://www.donmoorehonda.com/used-Owensboro-2018-Honda-CR%2BV-EX%2BL-2HKRW2H86JH658521"
-    }
+    {rank:1,year:2025,vehicle:"Toyota Corolla LE",price:19387,miles:20712,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Kenny Kent Toyota",area:"Evansville, IN",vin:"5YFB4MDE6SP241757",assessment:"Best overall low-mileage Toyota value found in this pass. Certified, only 20.7k miles, excellent fuel economy and still below the $20k ceiling.",url:"https://www.cars.com/vehicledetail/f26cb559-8a95-4125-b3dd-e3deb518aec2/"},
+    {rank:2,year:2018,vehicle:"Hyundai Elantra SE",price:14750,miles:20693,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Uebelhor & Sons Chevrolet Jasper",area:"Jasper, IN",vin:"KMHD74LF3JU453541",assessment:"Exceptional mileage for the price. Not hybrid or AWD, but 20.7k miles at $14,750 makes it one of the strongest value propositions.",url:"https://www.uebelhor.com/used/Hyundai/2018-Hyundai-Elantra-998e45cfac1851c1f80656ffb5ba4663.htm"},
+    {rank:3,year:2024,vehicle:"Toyota Corolla LE",price:18437,miles:31977,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Kenny Kent Toyota",area:"Evansville, IN",vin:"5YFB4MDE8RP162262",assessment:"Excellent age/mileage balance with Toyota Certified status, 32–41 MPG and modern driver-assistance features.",url:"https://www.cars.com/vehicledetail/9318694f-5b96-4974-b5bd-5db2cacbf755/"},
+    {rank:4,year:2018,vehicle:"Ford Fusion Hybrid S",price:18286,miles:44463,type:"Sedan",fuel:"Hybrid",drive:"FWD",dealer:"Don Moore on Frederica",area:"Owensboro, KY",vin:"3FA6P0UUXJR282061",assessment:"Best hybrid match. About 42 MPG combined, only 44.5k miles and local. Current dealer page shows $18,286 Moore Value Price including its listed processing fee.",url:"https://www.donmooretoyota.com/used-Owensboro-2018-Ford-Fusion%2BHybrid-S-3FA6P0UUXJR282061"},
+    {rank:5,year:2022,vehicle:"Toyota Corolla SE",price:17296,miles:71406,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Kenny Kent Toyota",area:"Evansville, IN",vin:"JTDS4MCE3N3506066",assessment:"Certified Toyota at a strong price. Mileage is higher than the leaders, but the price, efficiency and certification keep it competitive.",url:"https://www.cars.com/vehicledetail/c5f02d6f-bbee-483d-996a-d28ef19f2ab3/"},
+    {rank:6,year:2021,vehicle:"Toyota Corolla LE",price:14950,miles:87106,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Kenny Kent Toyota",area:"Evansville, IN",vin:"5YFEPMAE9MP155029",assessment:"Good budget Toyota option at $14,950. Mileage is approaching 90k, but it leaves substantial room below budget.",url:"https://www.cars.com/vehicledetail/c36c3da6-dbb8-455a-8ae8-17812fd25607/"},
+    {rank:7,year:2020,vehicle:"Honda CR-V LX",price:18257,miles:100967,type:"Small crossover",fuel:"Gas",drive:"AWD",dealer:"Lou Fusz Kia Evansville",area:"Evansville, IN",vin:"2HKRW2H23LH633624",assessment:"Best currently surfaced newer AWD crossover under $20k. Practical and efficient for an AWD SUV, but 101k miles is a significant penalty.",url:"https://www.cars.com/vehicledetail/8d3368ed-bdcd-48de-975c-70d878d8ba85/"}
   ]
 };
