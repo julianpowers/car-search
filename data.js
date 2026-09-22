@@ -1,13 +1,13 @@
 const CAR_DATA = {
-  updated: "September 21, 2026 · 5:00 AM ET · dealer-first refresh",
+  updated: "September 22, 2026 · 5:00 AM ET · dealer-first refresh",
   summary: [
-    "Fresh dealer-first refresh completed September 21. Champion Ship Auto Sales 54 was crawled first from its dealer-owned search inventory and current sitemap; qualifying $10,000–$20,000 sedans and small crossovers were followed to exact dealer VDPs before reranking.",
-    "The former #1 2018 Ford Fusion Hybrid S was purged today because its exact Don Moore dealer VDP now returns 404. Marketplace/cached matches are not enough to keep a vehicle published when the dealer-owned VDP is gone.",
-    "The 2022 Kia Forte LXS is the new #1 at $16,616 final and 70,667 miles. The 2021 Kia Sportage LX AWD is #2 at $17,939 final and 76,104 miles; both live Championship VDPs confirm VIN, price and mileage.",
-    "The 2021 Nissan Kicks SV is #3 at $14,810/88,922 miles and the 2021 Chevrolet Trailblazer LS is #4 at $16,042/94,643 miles. Their exact Championship VDPs remain live today.",
+    "Fresh dealer-first refresh completed September 22. Champion Ship Auto Sales 54 was crawled first from its dealer-owned search inventory and current sitemap; qualifying $10,000–$20,000 sedans and small crossovers were followed to exact dealer VDPs before reranking.",
+    "No stale Championship vehicles on the published board failed today's dealer-owned VDP check. The same top four remain directly verified at the same prices, mileages and VINs.",
+    "The 2022 Kia Forte LXS remains #1 at $16,616 final and 70,667 miles. The 2021 Kia Sportage LX AWD remains #2 at $17,939 final and 76,104 miles; both live Championship VDPs confirm VIN, price and mileage.",
+    "The 2021 Nissan Kicks SV remains #3 at $14,810/88,922 miles and the 2021 Chevrolet Trailblazer LS remains #4 at $16,042/94,643 miles. Their exact Championship VDPs remain live today.",
     "The 2018 Honda CR-V EX-L AWD remains the strongest Honda crossover on the verified board at $19,767/129,798 miles, but its high mileage and near-ceiling price keep it behind the newer lower-mileage choices.",
-    "Championship's current sitemap also shows a 2024 Buick Encore GX Preferred AWD, but its verified final price is $20,670, so it is excluded above the $20,000 ceiling. The older 2022 Trailblazer LS remains excluded because its exact dealer VDP previously failed despite sitemap presence.",
-    "The Jetta SE and Santa Fe SEL are withheld this run because their exact VDPs could not be freshly fetched; they can return when dealer-owned pages are directly verifiable. Marketplace sources remain secondary discovery/verification only."
+    "Championship's current sitemap still includes newer candidates such as the 2024 Buick Encore GX Preferred AWD and 2023 Volkswagen Jetta SE, but their known/current pricing is above the $20,000 ceiling, so they remain excluded.",
+    "Marketplace sources remain secondary discovery/verification only; every published Championship candidate below has a live dealer-owned VDP today."
   ],
   cars: [
     {rank:1,year:2022,vehicle:"Kia Forte LXS",price:16616,miles:70667,type:"Sedan",fuel:"Gas",drive:"FWD",dealer:"Champion Ship Auto Sales 54",area:"Owensboro, KY",vin:"3KPF24AD9NE478820",assessment:"Best verified overall value today. Live exact Championship VDP confirms $16,616 final, 70.7k miles, VIN and 29/39 MPG.",url:"https://www.championshipautos.com/used-Owensboro-2022-Kia-Forte-LXS-3KPF24AD9NE478820"},
